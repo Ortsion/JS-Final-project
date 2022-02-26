@@ -1,0 +1,151 @@
+html, body, .box {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    background-image: linear-gradient(45deg, lightgreen, white);
+}
+
+.box {
+    display: grid;
+    grid-template-rows: 25%, 75%;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: auto;
+}
+
+.buttons {
+    min-width: 350px;
+    max-width: 40%;
+
+    /* display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr; */
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    /* background-color: green; */
+    margin: auto;
+    /* gap: 10px; */
+}
+
+
+.number, .delete, .login {
+    min-width: 180px;
+    height: 100px;
+    color: white;
+    background-color: black;
+    font-size: 2em;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.pointer_none {
+    pointer-events: none;
+}
+
+.wrong_passcode {
+    border: 2px solid red;
+}
+
+.passcode {
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    height: 5em;
+    font-size: 1.5em;
+    margin: auto;
+    margin-top: 25px;
+    color: gray;
+}
+
+#wrong_passcode {
+    width: 200px;
+    height: auto;
+    background-color: red;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    position: absolute;
+    border-radius: 10px;
+    display: none;
+}
+
+
+.main_menu {
+    height: 100%;
+    background-image: linear-gradient(180deg, blue, lightblue);
+    display: grid;
+    grid-template-rows: 25% 70% 5%;
+}
+
+.main_menu > h1, footer {
+    /* margin-top: 5px;
+    margin-bottom: 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_menu > h1{
+    font-size: 5em;
+    color: white;
+}
+
+.main_menu > main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.main_menu > main > * {
+    box-sizing: border-box;
+    margin: 5px;
+    width: auto;
+    border: 5px solid beige;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 5em;
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(82, 82, 245);
+}
+
+.main_menu > main   :hover{
+    background-color: rgb(74, 53, 151);
+    color: rgb(230, 230, 112);
+}
+.newDiv {
+    height: 25px;
+    min-width: 50px;
+    padding: 3px;
+    border-bottom: 1px solid gray;
+    background-color: azure;
+}
+
+a{
+    text-decoration-line: none;
+}

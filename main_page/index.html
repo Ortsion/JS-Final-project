@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../main_page/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="welcome">
+            <h1>Welcome To My Site</h1>
+            <h3>Please enter the passcode by clicking the numbers buttons or using the keyboard</h3>
+        </div>
+        <!-- <input type="text" class="passcode" placeholder="Passcode" value="" oninput="stpoOn4()"> -->
+        <div class="passcode" onclick="stpoOn4()">Passcode</div>
+        <div class="footer">
+            <div id="wrong_passcode" onclick="display_none()">Wrong Passcode! please try again. Click on me to continue
+            </div>
+            <div class="buttons">
+                <div class="number" id="num1" onclick="btnClicked(event)">1</div>
+                <div class="number" id="num2" onclick="btnClicked(event)">2</div>
+                <div class="number" id="num3" onclick="btnClicked(event)">3</div>
+                <div class="number" id="num4" onclick="btnClicked(event)">4</div>
+                <div class="number" id="num5" onclick="btnClicked(event)">5</div>
+                <div class="number" id="num6" onclick="btnClicked(event)">6</div>
+                <div class="number" id="num7" onclick="btnClicked(event)">7</div>
+                <div class="number" id="num8" onclick="btnClicked(event)">8</div>
+                <div class="number" id="num9" onclick="btnClicked(event)">9</div>
+                <div class="delete" id="delete" onclick="deletePasscode(event)">Delete</div>
+                <div class="number" id="num0" onclick="btnClicked(event)">0</div>
+                <div class="login" id="login" onclick="login()">login</div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main_menu">
+        <h1>Welcome To O.M Exportation LTD</h1>
+        <main>
+           <a href="../costumer/costumer.html"> <div class="costumers">Costumers</div></a>
+            <a href="../products/products.html"> <div class="products">Products</div></a>
+        </main>
+        <footer>All Rights Reserved Ortsion Melki Development Solution LTD &copy;</footer>
+    </div>
+
+
+
+    <script src="../main_page/index.js"></script>
+</body>
+
+</html>
